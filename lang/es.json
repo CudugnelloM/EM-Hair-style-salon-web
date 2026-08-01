@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Sobre mí",
+    "gallery": "Galería",
+    "contact": "Contacto",
+    "bookAppointment": "Reservá tu cita"
+  },
+  "hero": {
+    "description": "Color, cuidado y diseño personalizado para realzar tu estilo en cada detalle.",
+    "bookAppointment": "Reservá tu cita",
+    "discoverServices": "Descubrir servicios",
+    "explore": "Explorar"
+  },
+  "services": {
+    "cutStyling": {
+      "title": "Corte & Styling",
+      "description": "Diseño de corte, brushing y terminaciones adaptadas a tu rostro y estilo personal."
+    },
+    "colorBalayage": {
+      "title": "Color & Balayage",
+      "description": "Coloración personalizada, iluminaciones y técnicas de balayage con acabado natural."
+    },
+    "treatments": {
+      "title": "Tratamientos",
+      "description": "Reparación, hidratación y nutrición profunda para recuperar brillo, fuerza y movimiento."
+    },
+    "events": {
+      "title": "Eventos",
+      "description": "Peinados y preparación integral para bodas, producciones y ocasiones especiales."
+    },
+    "label": "Experiencia EM",
+    "title": "Servicios pensados<br>para vos."
+  },
+  "about": {
+    "label": "Sobre Eber Martini",
+    "title": "Técnica, mirada<br>y personalidad.",
+    "description": "Una experiencia de salón cercana y sofisticada, donde cada servicio comienza escuchando lo que buscás y termina con un resultado hecho a medida.",
+    "objective": "El objetivo no es cambiar quién sos, sino potenciar tu mejor versión con una imagen que puedas disfrutar todos los días.",
+    "button": "Conocé la experiencia"
+  },
+  "gallery": {
+    "label": "Nuestro trabajo",
+    "title": "Detalles que<br>marcan la diferencia."
+  },
+  "contact": {
+    "title": "Tu próximo look empieza acá.",
+    "subtitle": "Completá tus datos",
+    "form": {
+      "name": "Nombre",
+      "phone": "Teléfono",
+      "service": "Servicio",
+      "selectOption": "Seleccioná una opción",
+      "cutStyling": "Corte & Styling",
+      "colorBalayage": "Color & Balayage",
+      "treatments": "Tratamientos",
+      "specialEvent": "Evento especial",
+      "message": "Mensaje",
+      "text": "Envianos tu consulta",
+      "submit": "Enviá tu consulta"
+    }
+  },
+  "footer": {
+    "rights": "Eber Martini. Todos los derechos reservados. Website design by Cucu Studio."
+  }
+}

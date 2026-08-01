@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Me",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "bookAppointment": "Book Your Appointment"
+  },
+  "hero": {
+    "description": "Personalized hair color, care, and styling designed to enhance every detail of your look.",
+    "bookAppointment": "Book Your Appointment",
+    "discoverServices": "Discover Services",
+    "explore": "Explore"
+  },
+  "services": {
+    "cutStyling": {
+      "title": "Cut & Styling",
+      "description": "Customized haircut design, blow-drying, and finishing touches adapted to your face and personal style."
+    },
+    "colorBalayage": {
+      "title": "Color & Balayage",
+      "description": "Personalized hair color, highlights, and balayage techniques with a natural-looking finish."
+    },
+    "treatments": {
+      "title": " Hair Treatments",
+      "description": "Deep repair, hydration, and nourishment treatments that restore shine, strength, and movement."
+    },
+    "events": {
+      "title": "Special Events",
+      "description": "Professional hairstyling and complete preparation for weddings, photo shoots, and special occasions."
+    },
+    "label": "The EM Experience",
+    "title": "Services designed<br>around you."
+  },
+  "about": {
+    "label": "About Eber Martini",
+    "title": "Technique, vision<br>and personality.",
+    "description": "A welcoming and sophisticated salon experience, where every service begins by listening to what you are looking for and ends with a result created especially for you.",
+    "objective": "The goal is not to change who you are, but to enhance the best version of yourself with a look you can enjoy every day.",
+     "button": "Discover the EM Experience"
+  },
+  "gallery": {
+    "label": "Our Work",
+    "title": "Details that<br>make the difference."
+  },
+  "contact": {
+    "title": "Your next look starts here.",
+    "subtitle": "Fill in your details",
+    "form": {
+      "name": "Name",
+      "phone": "Phone",
+      "service": "Service",
+      "selectOption": "Select an option",
+      "cutStyling": "Cut & Styling",
+      "colorBalayage": "Color & Balayage",
+      "treatments": "Treatments",
+      "specialEvent": "Special Event",
+      "message": "Message",
+      "submit": "Send Your Request"
+    }
+  },
+  "footer": {
+    "rights": " Eber Martini All rights reserved. Website design by Cucu Studio."
+  }
+}

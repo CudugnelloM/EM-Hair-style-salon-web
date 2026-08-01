@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
-  <script src="./js/main.js" defer></script>
+ 
+  
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -18,7 +19,14 @@
   <header class="site-header" id="siteHeader">
     <a class="brand" href="#inicio" aria-label="Eber Martini, volver al inicio">
       <img src="./assets/img/logo-eber-martini.png">
+
     </a>
+
+    <div class="language-selector">
+      <button type="button" data-language="en">EN</button>
+      <span aria-hidden="true">/</span>
+      <button type="button" data-language="es">ES</button>
+    </div>
 
     <button class="menu-toggle" id="menuToggle" type="button" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
       <span></span><span></span><span></span>
@@ -26,13 +34,15 @@
 
     <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
       <ul>
-        <li><a class="nav-link active" href="#inicio">Inicio</a></li>
-        <li><a class="nav-link" href="#servicios">Servicios</a></li>
-        <li><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
-        <li><a class="nav-link" href="#galeria">Galería</a></li>
-        <li><a class="nav-link" href="#contacto">Contacto</a></li>
+        <li><a class="nav-link active" href="#inicio" data-lang="nav.home"="">Inicio</a></li>
+        <li><a class="nav-link" href="#servicios" data-lang="nav.services"="">Servicios</a></li>
+        <li><a class="nav-link" href="#sobre-mi" data-lang="nav.about">Sobre mí</a></li>
+        <li><a class="nav-link" href="#galeria" data-lang="nav.gallery">Galería</a></li>
+        <li><a class="nav-link" href="#contacto" data-lang="nav.contact">Contacto</a></li>
       </ul>
-      <a class="nav-book" href="https://www.fresha.com/es/a/eber-martini-stylist-miami-ee-uu-2885-southwest-3rd-avenue-z98pftc6?fbclid=PAb21jcATY7vxleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaduDH3VlktsRSooExQJR-6ko13iTsLSjO5zfR8UtXQbHRyAOaaHF8mayU0WyQ_aem_V1WkEMRb2nVi_TeK9xbsHw&utm_id=97760_v0_s00_e0_tv3&utm_medium=social&utm_content=link_in_bio&utm_source=ig" target="_blank">Reservá tu cita</a>
+      <a class="nav-book" href="https://www.fresha.com/es/a/eber-martini-stylist-miami-ee-uu-2885-southwest-3rd-avenue-z98pftc6?fbclid=PAb21jcATY7vxleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaduDH3VlktsRSooExQJR-6ko13iTsLSjO5zfR8UtXQbHRyAOaaHF8mayU0WyQ_aem_V1WkEMRb2nVi_TeK9xbsHw&utm_id=97760_v0_s00_e0_tv3&utm_medium=social&utm_content=link_in_bio&utm_source=ig" target="_blank" data-lang="hero.bookAppointment">Book Your Appointment</a>
+
+      
     </nav>
 
     <a class="header-instagram" href="https://www.instagram.com/eber_hairstylistsalon/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Eber Martini">
@@ -51,43 +61,50 @@
       <div class="hero-content">
         <p class="eyebrow">Miami · Hair Style Salon</p>
        <!--<h1>Elegancia que<br><em>se siente.</em></h1>--> 
-        <p class="hero-copy">Color, cuidado y diseño personalizado para realzar tu estilo en cada detalle.</p>
+        <p class="hero-copy" data-lang="hero.description">Color, cuidado y diseño personalizado para realzar tu estilo en cada detalle.</p>
+
         <div class="hero-actions">
-          <a class="button button-gold" href="https://www.fresha.com/es/a/eber-martini-stylist-miami-ee-uu-2885-southwest-3rd-avenue-z98pftc6?fbclid=PAb21jcATY7vxleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaduDH3VlktsRSooExQJR-6ko13iTsLSjO5zfR8UtXQbHRyAOaaHF8mayU0WyQ_aem_V1WkEMRb2nVi_TeK9xbsHw&utm_id=97760_v0_s00_e0_tv3&utm_medium=social&utm_content=link_in_bio&utm_source=ig" target="_blank">Reservá tu cita</a>
-          <a class="text-link" href="#servicios">Descubrir servicios <span aria-hidden="true">→</span></a>
+          <a class="button button-gold" href="https://www.fresha.com/es/a/eber-martini-stylist-miami-ee-uu-2885-southwest-3rd-avenue-z98pftc6?fbclid=PAb21jcATY7vxleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaduDH3VlktsRSooExQJR-6ko13iTsLSjO5zfR8UtXQbHRyAOaaHF8mayU0WyQ_aem_V1WkEMRb2nVi_TeK9xbsHw&utm_id=97760_v0_s00_e0_tv3&utm_medium=social&utm_content=link_in_bio&utm_source=ig" target="_blank" rel="noopener noreferrer" data-lang="hero.bookAppointment">Book Your Appointment</a>
+
+          <a class="text-link" href="#servicios" >
+            <span data-lang="hero.discoverServices">Discover Services</span>
+            <span aria-hidden="true">→</span></a>
         </div>
       </div>
 
       <a class="scroll-cue" href="#servicios" aria-label="Bajar a servicios">
-        <span>Explorar</span><i></i>
+        <span data-lang="hero.explore">Explorar</span><i></i>
       </a>
     </section>
 
     <section class="section services" id="servicios">
       <div class="section-heading reveal">
-        <p class="eyebrow">Experiencia EM</p>
-        <h2>Servicios pensados<br>para vos.</h2>
+        <p class="eyebrow" data-lang="services.label">Experiencia EM</p>
+        <h2 data-lang-html="services.title">Servicios pensados<br>para vos.</h2>
       </div>
       <div class="services-grid">
         <article class="service-card reveal">
           <span class="service-number">01</span>
-          <h3>Corte & Styling</h3>
-          <p>Diseño de corte, brushing y terminaciones adaptadas a tu rostro y estilo personal.</p>
+          <h3 data-lang="services.cutStyling.title">Corte & Styling</h3>
+          <p data-lang="services.cutStyling.description">Diseño de corte, brushing y terminaciones adaptadas a tu rostro y estilo personal.</p>
         </article>
+
         <article class="service-card reveal">
           <span class="service-number">02</span>
-          <h3>Color & Balayage</h3>
-          <p>Coloración personalizada, iluminaciones y técnicas de balayage con acabado natural.</p>
+          <h3 data-lang="services.colorBalayage.title">Color & Balayage</h3>
+          <p data-lang="services.colorBalayage.description">Coloración personalizada, iluminaciones y técnicas de balayage con acabado natural.</p>
         </article>
+
         <article class="service-card reveal">
           <span class="service-number">03</span>
-          <h3>Tratamientos</h3>
-          <p>Reparación, hidratación y nutrición profunda para recuperar brillo, fuerza y movimiento.</p>
+          <h3 data-lang="services.treatments.title">Tratamientos</h3>
+          <p data-lang="services.treatments.description">Reparación, hidratación y nutrición profunda para recuperar brillo, fuerza y movimiento.</p>
         </article>
+
         <article class="service-card reveal">
           <span class="service-number">04</span>
-          <h3>Eventos</h3>
-          <p>Peinados y preparación integral para bodas, producciones y ocasiones especiales.</p>
+          <h3 data-lang="services.events.title">Eventos</h3>
+          <p data-lang="services.events.description">"Professional hairstyling and complete preparation for weddings, photo shoots, and special occasions."</p>
         </article>
       </div>
     </section>
@@ -97,66 +114,96 @@
         <img src="./assets/img/look-02.jpg" alt="Trabajo profesional de styling en Eber Martini Salon" loading="lazy">
       </div>
       <div class="about-content reveal">
-        <p class="eyebrow">Sobre Eber Martini</p>
-        <h2>Técnica, mirada<br>y personalidad.</h2>
-        <p>Una experiencia de salón cercana y sofisticada, donde cada servicio comienza escuchando lo que buscás y termina con un resultado hecho a medida.</p>
-        <p>El objetivo no es cambiar quién sos, sino potenciar tu mejor versión con una imagen que puedas disfrutar todos los días.</p>
-        <a class="text-link dark" href="#contacto">Conocé la experiencia EM <span aria-hidden="true">→</span></a>
+        <p class="eyebrow" data-lang="about.label">Sobre Eber Martini</p>
+        <h2 data-lang-html="about.title">Técnica, mirada<br>y personalidad.</h2>
+
+        <p data-lang="about.description">Una experiencia de salón cercana y sofisticada, donde cada servicio comienza escuchando lo que buscás y termina con un resultado hecho a medida.</p>
+        <p data-lang="about.objective">El objetivo no es cambiar quién sos, sino potenciar tu mejor versión con una imagen que puedas disfrutar todos los días.</p>
+        <a class="text-link dark" href="#contacto" >
+          <span data-lang="about.button">Conocé la experiencia EM </span>
+          <span aria-hidden="true">→</span></a>
       </div>
     </section>
 
     <section class="section gallery" id="galeria">
       <div class="gallery-heading reveal">
         <div>
-          <p class="eyebrow">Nuestro trabajo</p>
-          <h2>Detalles que<br>marcan la diferencia.</h2>
+          <p class="eyebrow" data-lang="gallery.label">Nuestro trabajo</p>
+          <h2 data-lang-html="gallery.title">Detalles que<br>marcan la diferencia.</h2>
         </div>
-        <a class="text-link" href="https://www.instagram.com/eber_hairstylistsalon/" target="_blank" rel="noopener noreferrer">Ver Instagram <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="https://www.instagram.com/eber_hairstylistsalon/" target="_blank" rel="noopener noreferrer"> Instagram <span aria-hidden="true">↗</span></a>
       </div>
+
       <div class="gallery-grid">
-        <figure class="gallery-item gallery-item-tall reveal"><img src="./assets/img/look-01.jpg" alt="Proceso de peluquería profesional" loading="lazy"></figure>
-        <figure class="gallery-item reveal"><img src="./assets/img/look-02.jpg" alt="Trabajo de styling y color" loading="lazy"></figure>
-        <figure class="gallery-item reveal"><img src="./assets/img/look-03.jpg" alt="Tratamiento capilar en salón" loading="lazy"></figure>
-        <figure class="gallery-item gallery-item-wide reveal"><img src="./assets/img/look-04.jpg" alt="Resultado de servicio de peluquería" loading="lazy"></figure>
+        <figure class="gallery-item gallery-item-tall reveal">
+          <img src="./assets/img/look-05.jpeg" alt="Proceso de peluquería profesional" loading="lazy">
+        </figure>
+        <figure class="gallery-item reveal">
+          <img src="./assets/img/look-01.jpg" alt="Trabajo de styling y color" loading="lazy">
+        </figure>
+        <figure class="gallery-item reveal">
+          <img src="./assets/img/look-06.jpg" alt="Tratamiento capilar en salón" loading="lazy">
+        </figure>
+        <figure class="gallery-item gallery-item-wide reveal">
+          <img src="./assets/img/look-04.jpg" alt="Resultado de servicio de peluquería" loading="lazy">
+        </figure>
       </div>
     </section>
 
     <section class="contact" id="contacto">
       <div class="contact-copy reveal">
        <!--<p class="eyebrow">Reservas</p>--> 
-        <h2>Tu próximo look<br>empieza acá.</h2>
-        <p>Completá tus datos</p>
+        <h2 data-lang-html="contact.title">Tu próximo look<br>empieza acá.</h2>
+        
         <div class="contact-details">
           <span>EE. UU., 2885 Southwest 3rd Avenue, Coral Way, Miami, Florida </span>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14374.07187119384!2d-80.22067268005395!3d25.753449665648482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b65e1bb9ce53%3A0xcdc12014d192d54d!2s2885%20SW%203rd%20Ave%2C%20Miami%2C%20FL%2033129%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1785468025357!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-          <a href="https://www.instagram.com/eber_hairstylistsalon/" target="_blank" rel="noopener noreferrer">@eber_hairstylistsalon</a>
+         
         </div>
-      </div>
+        <div class="redes-sociales">
+          <ul>
+            <li>
+               <a href="https://www.instagram.com/eber_hairstylistsalon/" target="_blank" rel="noopener noreferrer">
+                <img class="inst" src="./assets/img/social.png" alt="logo instagram">
 
+               </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img class="inst" src="./assets/img/whatsapp.png" alt="logo whatsapp">
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+      <p data-lang="contact.subtitle">Completá tus datos</p>
       <form class="booking-form reveal" id="bookingForm" novalidate>
         <label>
-          <span>Nombre</span>
-          <input type="text" name="name" autocomplete="name" required placeholder="Tu nombre">
+          <span data-lang="contact.form.name">Nombre</span>
+          <input type="text" name="name" autocomplete="name" required placeholder="name">
         </label>
         <label>
-          <span>Teléfono</span>
-          <input type="tel" name="phone" autocomplete="tel" required placeholder="Tu teléfono">
+          <span data-lang="contact.form.phone">Teléfono</span>
+          <input type="tel" name="phone" autocomplete="tel" required placeholder="phone">
         </label>
         <label>
-          <span>Servicio</span>
+          <span data-lang="contact.form.service">Servicio</span>
           <select name="service" required>
-            <option value="">Seleccioná una opción</option>
-            <option>Corte & Styling</option>
-            <option>Color & Balayage</option>
-            <option>Tratamientos</option>
-            <option>Evento especial</option>
+            <option value="" data-lang="contact.form.selectOption">Seleccioná una opción</option>
+            <option data-lang="contact.form.cutStyling">Corte & Styling</option>
+            <option data-lang="contact.form.colorBalayage">Color & Balayage</option>
+            <option data-lang="contact.form.treatments">Tratamientos</option>
+            <option data-lang="contact.form.specialEvent">Evento especial</option>
           </select>
         </label>
         <label>
-          <span>Mensaje</span>
-          <textarea name="message" rows="4" placeholder="Contanos qué te gustaría realizar"></textarea>
+          <span data-lang="contact.form.message">Mensaje</span>
+          <textarea name="message" rows="4" ></textarea>
         </label>
-        <button class="button button-gold" type="submit">Envia tu consulta</button>
+        <button class="button button-gold" type="submit" data-lang="contact.form.submit">Envia tu consulta</button>
         <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
       </form>
     </section>
@@ -165,7 +212,13 @@
   <footer class="footer">
     <img src="./assets/img/logo-eber-martini.svg" alt="" aria-hidden="true">
     <p> EM Hair Style Salon · EE. UU., 2885 Southwest 3rd Avenue, Coral Way, Miami, Florida </p>
-    <p>© <span id="year"></span> Eber Martini. Todos los derechos reservados.</p>
+    <p>© <span id="year"></span>
+          <span  data-lang="footer.rights">Eber Martini All rights reserved. Website design by Cucu Studio.</span>
+    </p>
+
   </footer>
+
+   <script src="./js/main.js" defer></script>
+  <script src="./js/lang.js" defer></script>
 </body>
 </html>
