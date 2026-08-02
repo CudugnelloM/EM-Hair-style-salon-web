@@ -61,6 +61,7 @@
     }
   },
   "footer": {
-    "rights": " Eber Martini All rights reserved. Website design by Cucu Studio."
+    "rights": " Eber Martini All rights reserved.",
+    "footer.crafted": "Crafted by"
   }
 }
