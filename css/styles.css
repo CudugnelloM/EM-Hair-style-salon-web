@@ -258,6 +258,21 @@ h2 {
   transform: scale(1.04); filter: grayscale(0); 
 }
 
+.local-image {
+  display: grid;
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  margin-top: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.local-image:hover {
+  transform: scale(1.05);
+}
+
 .redes-sociales ul { 
  display: flex;
   align-items: center;
@@ -506,7 +521,7 @@ h2 {
       transform 0.3s ease;
   }
 
-  /* Usá la clase que agrega tu JavaScript al abrir el menú */
+ 
   .main-nav.open,
   .main-nav.is-open {
     opacity: 1;
@@ -538,7 +553,18 @@ h2 {
     display: none;
   }
 
-  /* El contenido comienza debajo del header */
+  .gallery-grid {
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 260px;
+
+  }
+
+  .gallery-item.gallery-item-tall.reveal {
+    white-space: inherit;
+    grid-column: span 2;
+    grid-row: span 2;
+  }
   main {
     padding-top: 72px;
   }
