@@ -69,4 +69,22 @@
   });
 
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  const heroVideo = document.querySelector('.hero-video');
+  if (heroVideo && heroVideo.dataset.videoMobile) {
+    const mobileSrc = heroVideo.dataset.videoMobile;
+    const desktopSrc = heroVideo.dataset.videoDesktop;
+    const mq = window.matchMedia('(max-width: 720px)');
+
+    const syncSource = () => {
+      const target = mq.matches ? mobileSrc : desktopSrc;
+      if (heroVideo.currentSrc.endsWith(target.replace('./', ''))) return;
+      heroVideo.src = target;
+      heroVideo.load();
+      heroVideo.play().catch(() => {});
+    };
+
+    syncSource();
+    mq.addEventListener('change', syncSource);
+  }
 })();
