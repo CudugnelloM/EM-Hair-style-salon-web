@@ -186,36 +186,41 @@
 
       </div>
       <p data-lang="contact.subtitle">Completá tus datos</p>
-      <form class="booking-form reveal" id="bookingForm" novalidate>
-        <label>
-          <span data-lang="contact.form.name">Nombre</span>
-          <input type="text" name="name" autocomplete="name" required placeholder="name">
-        </label>
-        <label>
-          <span data-lang="contact.form.phone">Teléfono</span>
-          <input type="tel" name="phone" autocomplete="tel" required placeholder="phone">
-        </label>
-        <label>
-          <span data-lang="contact.form.service">Servicio</span>
-          <select name="service" required>
-            <option value="" data-lang="contact.form.selectOption">Seleccioná una opción</option>
-            <option data-lang="contact.form.cutStyling">Corte & Styling</option>
-            <option data-lang="contact.form.colorBalayage">Color & Balayage</option>
-            <option data-lang="contact.form.treatments">Tratamientos</option>
-            <option data-lang="contact.form.specialEvent">Evento especial</option>
-          </select>
-        </label>
-        <label>
-          <span data-lang="contact.form.message">Mensaje</span>
-          <textarea name="message" rows="4" ></textarea>
-        </label>
-        <button class="button button-gold" type="submit" data-lang="contact.form.submit">Envia tu consulta</button>
-        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-      </form>
+
+      <div class="contact-form reveal">
+        <form class="booking-form reveal" id="bookingForm" novalidate>
+          <label>
+            <span data-lang="contact.form.name">Nombre</span>
+            <input type="text" name="name" autocomplete="name" required placeholder="name">
+          </label>
+          <label>
+            <span data-lang="contact.form.phone">Teléfono</span>
+            <input type="tel" name="phone" autocomplete="tel" required placeholder="phone">
+          </label>
+          <label>
+            <span data-lang="contact.form.service">Servicio</span>
+            <select name="service" required>
+              <option value="" data-lang="contact.form.selectOption">Seleccioná una opción</option>
+              <option data-lang="contact.form.cutStyling">Corte & Styling</option>
+              <option data-lang="contact.form.colorBalayage">Color & Balayage</option>
+              <option data-lang="contact.form.treatments">Tratamientos</option>
+              <option data-lang="contact.form.specialEvent">Evento especial</option>
+            </select>
+          </label>
+          <label>
+            <span data-lang="contact.form.message">Mensaje</span>
+            <textarea name="message" rows="4" ></textarea>
+          </label>
+          <button class="button button-gold" type="submit" data-lang="contact.form.submit">Envia tu consulta</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
+
+    
     <img src="./assets/img/logo-eber-martini.svg" alt="" aria-hidden="true">
     <p> EM Hair Style Salon · EE. UU., 2885 Southwest 3rd Avenue, Coral Way, Miami, Florida </p>
 
